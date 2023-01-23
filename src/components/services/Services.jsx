@@ -1,12 +1,13 @@
 import React from "react"
 import "./services.css"
 import {BiCheck} from "react-icons/bi"
+import { i18n } from "../../translate/i18n"
 
 const Services = () => {
     return (
         <section id="services">
-            <h5>Deep Into My Knowledge</h5>
-            <h2>Knowledge and Abilities</h2>
+            <h5>{i18n.t("services.h5")}</h5>
+            <h2>{i18n.t("services.h2")}</h2>
 
             <div className="container services__container">
                 <article className="service">

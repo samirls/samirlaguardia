@@ -4,13 +4,14 @@ import ME from "../../img/samir3.jpg"
 import {FaAward} from "react-icons/fa"
 import {FiUsers} from "react-icons/fi"
 import {VscFolderLibrary} from "react-icons/vsc"
+import { i18n } from "../../translate/i18n"
 
 
 const About = () => {
     return (
         <section id="about">
-            <h5>Get To Know</h5>
-            <h2>About Me</h2>
+            <h5>{i18n.t("about.h51")}</h5>
+            <h2>{i18n.t("about.h2")}</h2>
 
             <div className="container about__container">
                 <div className="about__me">
@@ -23,32 +24,30 @@ const About = () => {
                     <div className="about__cards">
                         <article className="about__card">
                             <FaAward className="about__icon" />
-                            <h5>Experience</h5>
-                            <small>Almost a Year of coding</small>
+                            <h5>{i18n.t("about.h52")}</h5>
+                            <small>{i18n.t("about.small1")}</small>
                         </article>
 
                         <article className="about__card">
                             <FiUsers className="about__icon" />
-                            <h5>Focus on You</h5>
-                            <small>Supply your personal request</small>
+                            <h5>{i18n.t("about.h53")}</h5>
+                            <small>{i18n.t("about.small2")}</small>
                         </article>
 
                         <article className="about__card">
                             <VscFolderLibrary className="about__icon" />
-                            <h5>Projects</h5>
-                            <small>Build things that adds value</small>
+                            <h5>{i18n.t("about.h54")}</h5>
+                            <small>{i18n.t("about.small3")}</small>
                         </article>
                     </div>
 
                     <p>
-                        I'm curious and I pay attention to the details. I'll
-                        try my best to bring some creativity to the project, 
-                        making it modern, beautiful and useful. 
+                    {i18n.t("about.p")}
                         
 
                     </p>
 
-                    <a href="#contact" className="btn btn-primary">Let's Talk</a>
+                    <a href="#contact" className="btn btn-primary">{i18n.t("about.a")}</a>
                 </div>
             </div>
 
