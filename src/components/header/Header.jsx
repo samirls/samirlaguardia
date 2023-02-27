@@ -1,45 +1,26 @@
-import React from "react"
+import React, { useState } from "react";
 import "./header.css"
 import ME from "../../img/samir-transparente-1.png"
 import HeaderSocials from "./HeaderSocials"
 import { Typewriter } from 'react-simple-typewriter'
 import { i18n } from "../../translate/i18n"
-import { useEffect } from "react"; 
 import CVSamirEN from "../../img/CV-Samir-EN.pdf"
 import CVSamirPT from "../../img/CVSamir.pdf"
 
-const I18N_STORAGE_KEY = "i18nextLng";
+
 
 const Header = () => {
 
-    function languageState() {
-        if (localStorage.i18nextLng == "pt-BR") {
-            document.getElementById("changeBtn").innerText = "Change Language To English 🇺🇸";
-            document.getElementById("btn").href = CVSamirPT;
-        }
-        if (localStorage.i18nextLng == "en-US") {
-            document.getElementById("changeBtn").innerText = "Mudar Língua para Português 🇧🇷";
-            document.getElementById("btn").href = CVSamirEN;
-        }
-    }
+    const i18nStorageKey = "i18nextLng";
 
-    useEffect(() => {
-        let ignore = false;
-        
-        if (!ignore)  languageState()
-        return () => { ignore = true; }
-        },[]);
-       
+    const [language, setLanguage] = useState(localStorage.i18nextLng);
 
-    function changeLanguage() {
-        if (localStorage.i18nextLng == "pt-BR") {
-            return [localStorage.setItem(I18N_STORAGE_KEY, "en-US"), 
-             window.location.reload()];
-        }
-        if (localStorage.i18nextLng == "en-US") {
-            return [localStorage.setItem(I18N_STORAGE_KEY, "pt-BR"),  
-             window.location.reload()];
-    }}
+    function handleLanguageChange() {
+        const newLanguage = language === "pt-BR" ? "en-US" : "pt-BR";
+        localStorage.setItem(i18nStorageKey, newLanguage);
+        setLanguage(newLanguage);
+        window.location.reload();
+      }
 
     return (
         <header>
@@ -56,7 +37,7 @@ const Header = () => {
                 delaySpeed={1000}
                 />
                 <div className="cta">
-                    <a href={6} download id="btn" className='btn'>{i18n.t("cta.btn1")}</a>
+                    <a href={language === "pt-BR" ? CVSamirPT : CVSamirEN} download id="btn" className='btn'>{i18n.t("cta.btn1")}</a>
                     <a href="#contact" className='btn btn-primary'>{i18n.t("cta.btn2")}</a>
                 </div>
                 <div><HeaderSocials /></div>
@@ -64,7 +45,9 @@ const Header = () => {
                     <img src={ME} alt="me" />
                     
                 </div>
-                <a id="changeBtn" onClick={changeLanguage}>Change Language</a>
+                <a id="changeBtn" onClick={handleLanguageChange}>{language === "pt-BR"
+            ? "Change Language To English 🇺🇸"
+            : "Mudar Língua para Português 🇧🇷"}</a>
 
             </div>
         </header> 
@@ -72,3 +55,15 @@ const Header = () => {
 }
 
 export default Header
+
+
+/*
+Suggestions to improve the code:
+
+1 - Refactor the changeLanguage function to use state instead of local storage. This way you can manage the language state within your component.
+3 - Move the languageState function outside the component and into a custom hook.
+4 - Use a constant for the storage key i18nStorageKey instead of a string literal.
+5 - Use destructuring to access the i18n object's t method, this makes it easier to see what's being passed to the t method.
+6 - Avoid using DOM manipulation methods such as document.getElementById, instead use React state and hooks to manage the component's state.
+7 - Use useEffect hook with dependencies to prevent unnecessary re-renders.
+*/

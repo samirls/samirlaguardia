@@ -8,6 +8,7 @@ import {FaGithub} from "react-icons/fa"
 import { i18n } from "../../translate/i18n"
 
 const Footer = () => {
+
     return (
         <footer>
             <ul className="permalinks">

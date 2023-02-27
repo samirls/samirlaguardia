@@ -21,7 +21,7 @@
                 a: "Vamos Conversar"
             },
             experience: {
-                h5: "Quais as Minha Abilidades",
+                h5: "Quais as Minhas Habilidades",
                 h2: "Minha Experiência",
                 h3: "Desenvolvimento Frontend",
                 small1: "Avançado",
@@ -33,7 +33,7 @@
             },
             services: {
                 h5: "Aprofundando no Meu Conhecimento",
-                h2: "Conhecimento Técnico e Abilidades"
+                h2: "Conhecimento Técnico e Habilidades"
             },
             portfolio: {
                 h5: "Meu Trabalho Recente",
@@ -75,7 +75,7 @@
                 a1: "Início",
                 a2: "Sobre Mim",
                 a3: "Minha Experiência",
-                a4: "Conhecimento Técnico e Abilidades",
+                a4: "Conhecimento Técnico e Habilidades",
                 a5: "Portfólio",
                 a6: "Depoimentos",
                 a7: "Entre em Contato",
