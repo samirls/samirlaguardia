@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/samirlaguardia/static/css/main.4aa1a99b.css",
-    "main.js": "/samirlaguardia/static/js/main.f8136177.js",
+    "main.css": "/samirlaguardia/static/css/main.18dc6f71.css",
+    "main.js": "/samirlaguardia/static/js/main.89fb53c8.js",
     "static/media/samir-transparente-1.png": "/samirlaguardia/static/media/samir-transparente-1.adc3384e936b1058598f.png",
     "static/media/samir3.jpg": "/samirlaguardia/static/media/samir3.7349220a26adcc022916.jpg",
     "static/media/print-form.png": "/samirlaguardia/static/media/print-form.a38a5ca3363772c549cd.png",
@@ -11,18 +11,18 @@
     "static/media/print-uber-driver.png": "/samirlaguardia/static/media/print-uber-driver.ee278895ca978ee45992.png",
     "static/media/print-speed-typing.png": "/samirlaguardia/static/media/print-speed-typing.0e5dd3e81eb78b16b373.png",
     "static/media/rafaella-testimonial.jpg": "/samirlaguardia/static/media/rafaella-testimonial.d83cc61505fb33a2e9ab.jpg",
-    "static/media/CVSamir.pdf": "/samirlaguardia/static/media/CVSamir.d268762476ca03fbcd36.pdf",
-    "static/media/CV-Samir-EN.pdf": "/samirlaguardia/static/media/CV-Samir-EN.d631a9280c3cc3bd1ede.pdf",
     "static/media/print-rock-paper-scissors.png": "/samirlaguardia/static/media/print-rock-paper-scissors.76ebaff3fa4b65e6751f.png",
     "static/media/print-guia-trabalhista.png": "/samirlaguardia/static/media/print-guia-trabalhista.6879d6afa7db177f62fd.png",
     "static/media/print-library.png": "/samirlaguardia/static/media/print-library.4f6e1f52aefc89e633d0.png",
+    "static/media/CVSamir.pdf": "/samirlaguardia/static/media/CVSamir.b4602306d9187b9b180a.pdf",
+    "static/media/CV-Samir-EN.pdf": "/samirlaguardia/static/media/CV-Samir-EN.96de7ee6f6702d84ab34.pdf",
     "static/media/user.png": "/samirlaguardia/static/media/user.ae3a914be1e9f200b221.png",
     "index.html": "/samirlaguardia/index.html",
-    "main.4aa1a99b.css.map": "/samirlaguardia/static/css/main.4aa1a99b.css.map",
-    "main.f8136177.js.map": "/samirlaguardia/static/js/main.f8136177.js.map"
+    "main.18dc6f71.css.map": "/samirlaguardia/static/css/main.18dc6f71.css.map",
+    "main.89fb53c8.js.map": "/samirlaguardia/static/js/main.89fb53c8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa1a99b.css",
-    "static/js/main.f8136177.js"
+    "static/css/main.18dc6f71.css",
+    "static/js/main.89fb53c8.js"
   ]
 }
