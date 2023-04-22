@@ -8,6 +8,7 @@ import { i18n } from "../../translate/i18n"
 
 
 const About = () => {
+
     return (
         <section id="about">
             <h5>{i18n.t("about.h51")}</h5>
