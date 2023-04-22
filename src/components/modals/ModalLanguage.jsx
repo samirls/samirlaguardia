@@ -10,6 +10,11 @@ function ModalLanguage({selectedUS, selectedBR}) {
     //modalBackground precisa ter inset = 0 e position absolute
     document.body.classList.add("overflow-hidden");
 
+    window.addEventListener("load", () => {
+      // Rola para o topo da página
+      window.scrollTo(0, 0);
+    });
+
     return () => {
       document.body.classList.remove("overflow-hidden");
     };

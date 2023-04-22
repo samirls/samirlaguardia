@@ -23,13 +23,27 @@ const App = () => {
     i18n.changeLanguage(newLanguage);
   }
 
+  function initialLanguageUS() {
+    const initialLanguage = "en-US";
+    localStorage.setItem("i18nStorageKey", initialLanguage);
+    setLanguage(initialLanguage);
+    i18n.changeLanguage(initialLanguage);
+  }
+
+  function initialLanguageBR() {
+    const initialLanguage = "pt-BR";
+    localStorage.setItem("i18nStorageKey", initialLanguage);
+    setLanguage(initialLanguage);
+    i18n.changeLanguage(initialLanguage);
+  }
+
   const selectedUS = () => {
-    handleLanguageChange();
+    initialLanguageUS();
     setModalLanguage(false);
   };
 
   const selectedBR = () => {
-    handleLanguageChange();
+    initialLanguageBR();
     setModalLanguage(false);
   };
 
