@@ -39,9 +39,9 @@
                 h5: "My Recent Work",
                 h2: "Portfolio",
                 h31: "Website for Dr. Rafaella",
-                h51: "Website with blog I've made to my wife get more influence online.",
-                h32: "Sign up Form",
-                h52: "Webpage with Javascript to validate sign up form.",
+                h51: "Website with blog I've made to this client to get more influence online.",
+                h32: "CV Maker",
+                h52: "Webpage made with react to make CVs and download them in PDF.",
                 h33: "Interactive Glasgow Scale",
                 h53: "Webapp to calculate the answers given by the user to tell him how to proceed accordingly to the Glasgow Scale. Can be used my health professionals.",
                 h34: "Employer Calculator",
@@ -55,7 +55,9 @@
                 h38: "Speed Typing",
                 h58: "Available only in english and for PCs, see how fast you can type in your keyboard. Made with Javascript.",
                 h39: "React Webpage",
-                h59: "Webpage made with React.JS."
+                h59: "Webpage made with React.JS for professional drivers.",
+                h310: "Mini Message Board",
+                h510: "Full stack project with MERN."
             },
             testimonials: {
                 h5: "Review from clients",

@@ -1,7 +1,6 @@
 import React from "react"
 import "./portfolio.css"
 import IMG1 from "../../img/print-draRafaella.png"
-import IMG2 from "../../img/print-form.png"
 import IMG3 from "../../img/print-glasgow.png"
 import IMG4 from "../../img/print-guia-trabalhista.png"
 import IMG5 from "../../img/print-library.png"
@@ -9,6 +8,8 @@ import IMG6 from "../../img/print-movie-blog.png"
 import IMG7 from "../../img/print-rock-paper-scissors.png"
 import IMG8 from "../../img/print-speed-typing.png"
 import IMG9 from "../../img/print-uber-driver.png"
+import IMG10 from "../../img/print-cv-maker.png"
+import IMG11 from "../../img/print-message-board.png"
 import { i18n } from "../../translate/i18n"
 
 const Portfolio = () => {
@@ -28,16 +29,6 @@ const Portfolio = () => {
                     <div className="portfolio__item-cta">
                         <a href="https://github.com/samirls/rafaellalaguardia" className="btn" target="_blank">GitHub</a>
                         <a href="https://samirls.github.io/rafaellalaguardia/" className="btn btn-primary" target="_blank">Live Demo</a>
-                    </div>
-                </article>
-                <article className="portfolio__item">
-                    <div className="portfolio__item-image">
-                        <img src={IMG2} />
-                    </div>
-                    <h3>{i18n.t("portfolio.h32")}</h3>
-                    <h5>{i18n.t("portfolio.h52")}</h5>
-                    <div className="portfolio__item-cta">
-                        <a href="https://github.com/samirls/sign-up-form" className="btn" target="_blank">GitHub</a>
                     </div>
                 </article>
                 <article className="portfolio__item">
@@ -80,13 +71,14 @@ const Portfolio = () => {
                 </article>
                 <article className="portfolio__item">
                     <div className="portfolio__item-image">
-                        <img src={IMG6} />
+                        <img src={IMG10} />
                     </div>
-                    <h3>{i18n.t("portfolio.h36")}</h3>
-                    <h5>{i18n.t("portfolio.h56")}
+                    <h3>{i18n.t("portfolio.h32")}</h3>
+                    <h5>{i18n.t("portfolio.h52")}
                     </h5>
                     <div className="portfolio__item-cta">
-                        <a href="https://github.com/samirls/admin-Dashboard" className="btn" target="_blank">GitHub</a>
+                        <a href="https://github.com/samirls/cv-maker" className="btn" target="_blank">GitHub</a>
+                        <a href="https://samirls.github.io/cv-maker/" className="btn btn-primary" target="_blank">Live Demo</a>
                     </div>
                 </article>
                 <article className="portfolio__item">
@@ -123,6 +115,18 @@ const Portfolio = () => {
                     <div className="portfolio__item-cta">
                         <a href="https://github.com/samirls/uber-driver-react" className="btn" target="_blank">GitHub</a>
                         <a href="https://samirls.github.io/uber-driver-react/" className="btn btn-primary" target="_blank">Live Demo</a>
+                    </div>
+                </article>
+                <article className="portfolio__item">
+                    <div className="portfolio__item-image">
+                        <img src={IMG11} />
+                    </div>
+                    <h3>{i18n.t("portfolio.h310")}</h3>
+                    <h5>{i18n.t("portfolio.h510")}
+                    </h5>
+                    <div className="portfolio__item-cta">
+                        <a href="https://github.com/samirls/message-board-client" className="btn" target="_blank">GitHub</a>
+                        <a href="https://samirls.github.io/message-board-client/" className="btn btn-primary" target="_blank">Live Demo</a>
                     </div>
                 </article>
 

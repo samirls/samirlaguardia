@@ -11,6 +11,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import { i18n } from "./translate/i18n";
 import { useState } from "react";
 import ModalLanguage from "./components/modals/ModalLanguage";
+import CodeBackground from "./components/codeBackground/CodeBackground";
 
 const App = () => {
   const [language, setLanguage] = useState(localStorage.i18nextLng);
@@ -55,9 +56,9 @@ const App = () => {
       <Header handleLanguageChange={handleLanguageChange} language={language} />
       <Nav />
       <About />
-      <Experience />
       <Services />
       <Portfolio />
+      <CodeBackground />
       <Testimonials />
       <Contact />
       <Footer />

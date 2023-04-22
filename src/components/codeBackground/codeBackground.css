@@ -1,0 +1,38 @@
+.codeBackground{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(29, 29, 63);
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  35% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.8;
+  }
+  65% {
+    opacity: 9;
+  }
+  75% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 9;
+  }
+}
+.codeBackground2{
+  background-image:linear-gradient(to bottom, rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../../img/code-h.png);
+  background-attachment: fixed;
+  height: 150px;
+  margin-top: 20px;
+  animation: flicker 2s ease-in-out infinite;
+}

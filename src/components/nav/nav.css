@@ -12,7 +12,9 @@ nav{
     gap: 0.8rem;
     border-radius: 3rem;
     backdrop-filter: blur(9px);
+    animation: flicker 6s ease-in-out infinite;
 }
+
 nav a{
     background: transparent;
     padding: 0.9rem;

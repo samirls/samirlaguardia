@@ -40,8 +40,8 @@
                 h2: "Portfólio",
                 h31: "Website para a Dra. Rafaella",
                 h51: "Website com blog que eu fiz para a minha esposa ter mais influência online.",
-                h32: "Formulário de Cadastro",
-                h52: "Webpage com Javascript para validação de formulário de cadastro.",
+                h32: "CV Maker",
+                h52: "Webpage feita com React.js para a criação de currículo e download do mesmo em PDF.",
                 h33: "Escala de Glasgow Interativa",
                 h53: "Webapp que calcula as respostas dadas pelo usuário para informar como proceder de acordo com a Escala de Glasgow. Pode ser utilizado por profissionais da saúde.",
                 h34: "Calculadora do Empregador",
@@ -55,7 +55,9 @@
                 h38: "Velocidade da sua Digitação",
                 h58: "Disponível apenas em inglês e para computador. Veja o quão rápido você consegue digitar no teclado. Feito com Javascript.",
                 h39: "React Webpage",
-                h59: "Webpage feita com React.JS."
+                h59: "Webpage feita com React.JS.",
+                h310: "Mini Message Board",
+                h510: "Projeto Full stack feito com MERN."
             },
             testimonials: {
                 h5: "Comentários de Clientes",
