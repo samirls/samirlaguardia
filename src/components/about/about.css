@@ -13,32 +13,7 @@
     display: grid;
     place-items: center;
 }
-@keyframes flicker {
-    0% {
-      opacity: 1;
-    }
-    25% {
-      opacity: 0.3;
-    }
-    35% {
-      opacity: 1;
-    }
-    45% {
-      opacity: 0.8;
-    }
-    65% {
-      opacity: 9;
-    }
-    75% {
-      opacity: 1;
-    }
-    90% {
-      opacity: 0.7;
-    }
-    100% {
-      opacity: 9;
-    }
-  }
+
 .about__me-image{
     width: 85%;
     border-radius: 2rem;
