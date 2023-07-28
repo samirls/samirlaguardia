@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/samirlaguardia/static/css/main.8d9e2d66.css",
-    "main.js": "/samirlaguardia/static/js/main.0e3dec27.js",
+    "main.css": "/samirlaguardia/static/css/main.03b27278.css",
+    "main.js": "/samirlaguardia/static/js/main.97207e72.js",
     "static/media/samir-transparente-1.png": "/samirlaguardia/static/media/samir-transparente-1.adc3384e936b1058598f.png",
     "static/media/samir3.jpg": "/samirlaguardia/static/media/samir3.7349220a26adcc022916.jpg",
     "static/media/print-draRafaella.png": "/samirlaguardia/static/media/print-draRafaella.b986ebe7306c90fa799d.png",
@@ -22,11 +22,11 @@
     "static/media/CV-Samir-EN.pdf": "/samirlaguardia/static/media/CV-Samir-EN.96de7ee6f6702d84ab34.pdf",
     "static/media/user.png": "/samirlaguardia/static/media/user.ae3a914be1e9f200b221.png",
     "index.html": "/samirlaguardia/index.html",
-    "main.8d9e2d66.css.map": "/samirlaguardia/static/css/main.8d9e2d66.css.map",
-    "main.0e3dec27.js.map": "/samirlaguardia/static/js/main.0e3dec27.js.map"
+    "main.03b27278.css.map": "/samirlaguardia/static/css/main.03b27278.css.map",
+    "main.97207e72.js.map": "/samirlaguardia/static/js/main.97207e72.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d9e2d66.css",
-    "static/js/main.0e3dec27.js"
+    "static/css/main.03b27278.css",
+    "static/js/main.97207e72.js"
   ]
 }
