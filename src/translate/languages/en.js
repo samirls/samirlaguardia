@@ -8,6 +8,9 @@
                 btn1: "Download CV",
                 btn2: "Let's Talk"
             },
+            nav: {
+                click: "Click to Navigate"
+            },
             about: {
                 h51: "Get To Know",
                 h2: "About Me",

@@ -14,7 +14,7 @@ const Header = ({ handleLanguageChange, language }) => {
       <div className="container header__container">
         <h5>{i18n.t("header.h5")}</h5>
         <div className="wall"></div>
-        <h1>Samir</h1>
+        <h1>Samir Laguardia</h1>
         <Typewriter
           words={["Full Stack Developer", "Programmer", "Professional Coder"]}
           loop={0}
@@ -38,11 +38,9 @@ const Header = ({ handleLanguageChange, language }) => {
           </a>
         </div>
         <div>
-          <HeaderSocials />
+
         </div>
-        <div className="me">
-          <img src={ME} alt="me" />
-        </div>
+
         <a id="changeBtn" onClick={handleLanguageChange}>
           {language === "pt-BR"
             ? "Change Language To English 🇺🇸"

@@ -1,6 +1,7 @@
 import "./modalLanguage.css";
 import { useEffect } from "react";
 import ReactDOM from "react-dom";
+import 'animate.css';
 
 function ModalLanguage({selectedUS, selectedBR}) {
 
@@ -21,12 +22,12 @@ function ModalLanguage({selectedUS, selectedBR}) {
   }, []);
 
   return ReactDOM.createPortal(
-    <div className="modalBackground">
+    <div className="modalBackground animate__animated animate__fadeIn">
       <div className="modalBox">
         <div>Please select a language:</div>
         <div className="languagesToSelect">
-          <div title="en-US" className="selectUS" onClick={selectedUS}>🇺🇸</div>
-          <div title="pt-BR" className="selectBR" onClick={selectedBR}>🇧🇷</div>
+          <div title="en-US" className="selectUS" onClick={selectedUS}>English</div>
+          <div title="pt-BR" className="selectBR" onClick={selectedBR}>Portuguese</div>
         </div>
       </div>
     </div>,

@@ -55,11 +55,9 @@ const App = () => {
       )}
       <Header handleLanguageChange={handleLanguageChange} language={language} />
       <Nav />
-      <About />
       <Services />
       <Portfolio />
       <CodeBackground />
-      <Testimonials />
       <Contact />
       <Footer />
     </>

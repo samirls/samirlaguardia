@@ -8,6 +8,9 @@
                 btn1: "Currículo em PDF",
                 btn2: "Vamos Conversar"
             },
+            nav: {
+                click: "Pressione para Navegar"
+            },
             about: {
                 h51: "Conheça",
                 h2: "Sobre Mim",
