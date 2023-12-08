@@ -12,15 +12,14 @@ function Skills() {
   return (
     <Box
       width="87vw"
-      bg="gray.100"
+      bg="white"
       display="flex"
       flexDir="column"
       justifyContent="flex-start"
       alignItems="center"
-      height="62vh"
     >
-      <Box width="99%" mb="10px" bg="white" borderBottomRadius="9px">
-        <Box fontSize="2rem" pl="10px" fontWeight="500" className="animate__animated animate__fadeIn">
+      <Box width="100%" height='78vh'>
+        <Box fontSize="2rem" pl="10px" pt='20px' fontWeight="500" className="animate__animated animate__fadeIn">
           Habilidades
         </Box>
         <Grid templateColumns="repeat(2, 1fr)" gap={10} px="60px" py="20px" className="animate__animated animate__fadeIn">
@@ -50,9 +49,8 @@ function Skills() {
           flexDir="column"
           justifyContent="center"
           width="100%"
-          px="20px"
+          px="70px"
           fontSize="1.2rem"
-          pb="40px"
           className="animate__animated animate__fadeIn"
         >
           <Star

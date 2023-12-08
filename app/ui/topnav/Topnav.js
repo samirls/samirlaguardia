@@ -7,22 +7,21 @@ function Topnav() {
   return (
     <Box
       width="87vw"
-      bg="gray.100"
       display="flex"
       flexDir="column"
       justifyContent="flex-start"
       alignItems="center"
+      height="22vh"
+      bg="white"
     >
-      <Box width="99%" mt="10px" bg="white" borderTopRadius="9px">
+      <Box width="100%">
         <Box
           display="flex"
           flexDir="column"
           justifyContent="center"
-          minHeight="30vh"
           pl="20px"
           backgroundImage="/img/Pc-code.jpg"
           bgPosition="left"
-          borderTopRadius="9px"
         >
           <Box
             display="block"
@@ -61,12 +60,12 @@ function Topnav() {
             />
           </Box>
         </Box>
-        <Box py="20px">
+        <Box py="10px">
           <Grid templateColumns="repeat(5, 1fr)" gap={6} px="10px">
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
-            <GridItem w="100%" h="1" bg="blue.300" borderRadius="9px" />
+            <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
             <GridItem w="100%" h="1" bg="purple.400" borderRadius="9px" />
-            <GridItem w="100%" h="1" bg="blue.300" borderRadius="9px" />
+            <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
           </Grid>
         </Box>

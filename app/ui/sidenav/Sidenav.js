@@ -28,6 +28,7 @@ export default function SideNav() {
       height="100vh"
       justifyContent="center"
       px='10px'
+      bg='white'
     >
       <Box
         display="flex"

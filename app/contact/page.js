@@ -9,24 +9,25 @@ function Contact() {
   return (
     <Box
       width="87vw"
-      bg="gray.100"
+      bg="white"
       display="flex"
       flexDir="column"
       justifyContent="flex-start"
       alignItems="center"
       height="62vh"
     >
-      <Box width="99%" mb="10px" bg="white" borderBottomRadius="9px">
+      <Box width="100%">
         <Box
           fontSize="2rem"
           pl="10px"
+          pt='20px'
           fontWeight="500"
           className="animate__animated animate__fadeIn"
         >
           Contato
         </Box>
         <Box height="55vh">
-          <Box pl="20px">Diga um olá</Box>
+          <Box pl="20px" className="animate__animated animate__fadeIn">Diga um olá!</Box>
           <Grid
             templateColumns="1fr 1fr"
             gap={10}
