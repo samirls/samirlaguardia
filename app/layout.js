@@ -3,7 +3,7 @@ import "./globals.css";
 import { Providers } from "./providers";
 
 import { Box } from "@chakra-ui/layout";
-import SideNav from "./ui/sidenav/sidenav";
+import SideNav from "./ui/sidenav/Sidenav";
 import Topnav from "./ui/topnav/Topnav";
 
 const inter = Inter({ subsets: ["latin"] });

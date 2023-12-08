@@ -1,12 +1,11 @@
 "use client";
 
 import { Box } from "@chakra-ui/layout";
-import Link from "next/link";
 import { IoHomeOutline } from "react-icons/io5";
 import { GiSkills } from "react-icons/gi";
 import { FaPersonChalkboard } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
-import { BsChatQuote } from "react-icons/bs";
+
 import { usePathname } from "next/navigation";
 import NavItem from "./NavItem";
 import 'animate.css';
@@ -16,7 +15,6 @@ const menuItems = [
   { icon: <GiSkills />, label: "Habilidades", path: "/skills" },
   { icon: <FaPersonChalkboard />, label: "Portfólio", path: "/portfolio" },
   { icon: <FiPhone />, label: "Contato", path: "/contact" },
-  /* { icon: <BsChatQuote />, label: "Blog", path: "/blog"}, */
 ];
 
 export default function SideNav() {
