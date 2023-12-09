@@ -24,6 +24,7 @@ function Star({ message }) {
       onMouseEnter={starHovered}
       onMouseLeave={starNotHovered}
       cursor='default'
+      textAlign='justify'
     >
       <Box>
         {star ? (

@@ -6,12 +6,12 @@ import { Typewriter } from "react-simple-typewriter";
 function Topnav() {
   return (
     <Box
-      width="87vw"
+      width={{base: '100vw', lg:"87vw"}}
       display="flex"
       flexDir="column"
       justifyContent="flex-start"
       alignItems="center"
-      height="22vh"
+      height={{base:'200px', lg:"22vh"}}
       bg="white"
     >
       <Box width="100%">

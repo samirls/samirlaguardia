@@ -6,25 +6,24 @@ import "animate.css";
 export default function Home() {
   return (
     <Box
-      width="87vw"
+      width={{base:'100vw', lg:"87vw"}}
       display="flex"
-      flexDir="column"
       justifyContent="center"
       alignItems="center"
-      height="78vh"
+      height={{base: '', lg:"78vh"}}
       bg="white"
     >
       <Box width="100%">
         <Box px="10px" className="animate__animated animate__fadeIn">
           <Grid
-            templateColumns="repeat(3, 1fr)"
-            gap={6}
-            h="35vh"
+            templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }}
+            gap={{base: 3, lg:6}}
+            h={{base: '',lg:"35vh"}}
             alignItems="center"
           >
             <Box
               w="100%"
-              h="30vh"
+              h={{base:'150px', lg:"30vh"}}
               bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
               borderRadius="30px"
               display="flex"
@@ -46,7 +45,7 @@ export default function Home() {
             </Box>
             <Box
               w="100%"
-              h="30vh"
+              h={{base:'150px', lg:"30vh"}}
               bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
               borderRadius="30px"
               display="flex"
@@ -68,7 +67,7 @@ export default function Home() {
             </Box>
             <Box
               w="100%"
-              h="30vh"
+              h={{base:'150px', lg:"30vh"}}
               bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
               borderRadius="30px"
               display="flex"
@@ -107,7 +106,7 @@ export default function Home() {
             alignItems="center"
             gap={1}
           >
-            <Box fontSize="1.6rem" fontWeight="600" pb="10px">
+            <Box fontSize="1.6rem" fontWeight="600" textAlign='center' pb="10px">
               Familiaridade com várias tecnologias
             </Box>
             <Box align="center">

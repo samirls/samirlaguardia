@@ -11,18 +11,18 @@ import "animate.css";
 function Skills() {
   return (
     <Box
-      width="87vw"
+      width={{base:'100vw', lg:"87vw"}}
       bg="white"
       display="flex"
       flexDir="column"
-      justifyContent="flex-start"
+      justifyContent="center"
       alignItems="center"
     >
-      <Box width="100%" height='78vh'>
+      <Box width="100%" height={{base: '', lg:'78vh'}}>
         <Box fontSize="2rem" pl="10px" pt='20px' fontWeight="500" className="animate__animated animate__fadeIn">
           Habilidades
         </Box>
-        <Grid templateColumns="repeat(2, 1fr)" gap={10} px="60px" py="20px" className="animate__animated animate__fadeIn">
+        <Grid templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }} gap={10} px="60px" py="20px" className="animate__animated animate__fadeIn">
           <Card
             title={"Frontend"}
             icon={<FiMonitor/>}
@@ -41,26 +41,30 @@ function Skills() {
             option3="Nest.js"
             option4="Java"
             option5="Spring Boot"
-            option6="Banco de dados SQL e NoSQL"
+            option6="DB SQL/NoSQL"
           />
         </Grid>
         <Box
           display="flex"
           flexDir="column"
           justifyContent="center"
-          width="100%"
-          px="70px"
-          fontSize="1.2rem"
+          width={{base: '100%', lg: "100%"}}
+          px={{base: '30px', lg:"70px"}}
+          fontSize={{base: '1rem', lg:"1.2rem"}}
           className="animate__animated animate__fadeIn"
+          gap={{base: 5, lg: 2}}
+          pb={{base:'50px', lg:'5px'}}
+          pt={{base: '30px', lg: '5px'}}
+
         >
           <Star
             message={
-              "Altualmente curso pós-graduação em desenvolvimento Full Stack pela Centro Universitário Descomplica."
+              "Cursando pós-graduação em desenvolvimento Full Stack pelo Centro Universitário Descomplica."
             }
           />
           <Star
             message={
-              "Faço curso de Backend com Node.js e Typescript com a AdaTech."
+              "Cursando Backend com Node.js e Typescript com a AdaTech."
             }
           />
           <Star
