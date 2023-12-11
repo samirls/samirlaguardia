@@ -9,7 +9,7 @@ import { useMediaQuery } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next';
 
 
-function Slide({ src, hrefLive, hrefGithub, skills }) {
+function SingleSlide({ src, hrefLive, hrefGithub, skills }) {
 
   const [isLargerThan800] = useMediaQuery('(min-width: 992px)')
 
@@ -76,4 +76,4 @@ function Slide({ src, hrefLive, hrefGithub, skills }) {
   );
 }
 
-export default Slide;
+export default SingleSlide;

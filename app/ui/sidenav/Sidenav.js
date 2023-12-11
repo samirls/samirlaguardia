@@ -19,6 +19,7 @@ import { LiaFlagUsaSolid } from "react-icons/lia";
 import { i18n } from "../../../app/translation/i18n";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
+import { Tooltip } from "@chakra-ui/react";
 
 export default function SideNav() {
   const pathname = usePathname();
@@ -47,33 +48,40 @@ export default function SideNav() {
         px="10px"
         bg="white"
       >
-        <Box
-          display={{ base: "none", lg: "flex" }}
-          justifyContent="center"
-          alignItems="center"
-          fontSize="2.5rem"
-          color="black"
-        >
-          <Menu>
-            <MenuButton>
-              <IoLanguageOutline />
-            </MenuButton>
-            <MenuList fontSize="1.2rem">
-              <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
-                English
-                <Box ml={2}>
-                  <LiaFlagUsaSolid />
-                </Box>
-              </MenuItem>
-              <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
-                Português
-                <Box color="white" bg="black" height="fit-content" ml={2}>
-                  <GiBrazilFlag />
-                </Box>
-              </MenuItem>
-            </MenuList>
-          </Menu>
-        </Box>
+        <Tooltip label="Choose your Language" placement='right'>
+          <Box
+            display={{ base: "none", lg: "flex" }}
+            justifyContent="center"
+            alignItems="center"
+            fontSize="2.5rem"
+            color="black"
+            position="absolute"
+            bottom={10}
+            left={10}
+            bg='purple.200'
+            borderRadius='50%'
+          >
+            <Menu>
+              <MenuButton>
+                <IoLanguageOutline />
+              </MenuButton>
+              <MenuList fontSize="1.2rem">
+                <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
+                  English
+                  <Box ml={2}>
+                    <LiaFlagUsaSolid />
+                  </Box>
+                </MenuItem>
+                <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
+                  Português
+                  <Box color="white" bg="black" height="fit-content" ml={2}>
+                    <GiBrazilFlag />
+                  </Box>
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
+        </Tooltip>
         <Box
           display="flex"
           flexDir="column"

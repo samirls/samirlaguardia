@@ -8,7 +8,7 @@ import { BiLogoTypescript, BiLogoSpringBoot, BiLogoPostgresql  } from "react-ico
 import { SiMongodb, SiExpress, SiMongoose, SiJavascript  } from "react-icons/si";
 import {BsCircle} from 'react-icons/bs'
 import 'animate.css';
-import Slide from "./Slide.js"
+import SingleSlide from './SingleSlide'
 
 function Carousel() {
 
@@ -32,7 +32,7 @@ function Carousel() {
 
         {
           currentPage === 1 &&
-          <Slide 
+          <SingleSlide
             src={"/img/drake-equation.png"}
             hrefLive={"https://drake-equation-next-14.vercel.app/"}
             hrefGithub={"https://github.com/samirls/drake-equation-next-14"}
@@ -45,7 +45,7 @@ function Carousel() {
         }
         {
           currentPage === 2 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/todo-family.png"}
             hrefLive={"https://todofamily.samirlaguardia.com/"}
             hrefGithub={"https://github.com/samirls/todo-family-api"}
@@ -59,7 +59,7 @@ function Carousel() {
         }
         {
           currentPage === 3 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/minha-clinica.png"}
             hrefLive={"notDeployed"}
             hrefGithub={"https://github.com/samirls/med-track-api"}
@@ -73,7 +73,7 @@ function Carousel() {
         }
         {
           currentPage === 4 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/workout-buddy.png"}
             hrefLive={"notDeployed"}
             hrefGithub={"https://github.com/samirls/workout-buddy-be"}
@@ -87,7 +87,7 @@ function Carousel() {
         }
         {
           currentPage === 5 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/speed-typing.png"}
             hrefLive={"https://samirls.github.io/speedtyping/index.html"}
             hrefGithub={"https://github.com/samirls/speedtyping"}
@@ -100,7 +100,7 @@ function Carousel() {
         }
         {
           currentPage === 6 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/movie-blog.png"}
             hrefLive={"notDeployed"}
             hrefGithub={"https://github.com/samirls/admin-Dashboard"}
@@ -113,7 +113,7 @@ function Carousel() {
         }
         {
           currentPage === 7 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/escala-glasgow.png"}
             hrefLive={"https://samirls.github.io/glasgow/"}
             hrefGithub={"https://github.com/samirls/glasgow"}
@@ -126,7 +126,7 @@ function Carousel() {
         }
         {
           currentPage === 8 &&
-          <Slide 
+          <SingleSlide 
             src={"/img/calculadora-trabalhista.png"}
             hrefLive={"https://samirls.github.io/calculadoraclt/"}
             hrefGithub={"https://github.com/samirls/calculadoraclt"}
