@@ -3,11 +3,13 @@ import Link from "next/link";
 import React from "react";
 
 function Card({icon, title, subTitle, buttonName, href}) {
+
+
   return (
     <Box
       w={{base: '80%', lg:"50%"}}
       h={{base: '150px', lg:"15vh"}}
-      bg="linear-gradient(to top, #e0e7ea8a 0%, #e0e7ea36 100%);"//#e0e7ea8a
+      bg="linear-gradient(to top, #e0e7ea8a 0%, #e0e7ea36 100%);"
       borderRadius="30px"
       display="flex"
       flexDir="column"

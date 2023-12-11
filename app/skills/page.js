@@ -7,8 +7,12 @@ import Star from "./Star";
 import { FiMonitor } from "react-icons/fi";
 import { TbDatabase } from "react-icons/tb";
 import "animate.css";
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
+
+  const { t } = useTranslation();
+
   return (
     <Box
       width={{base:'100vw', lg:"87vw"}}
@@ -20,7 +24,7 @@ function Skills() {
     >
       <Box width="100%" height={{base: '', lg:'78vh'}}>
         <Box fontSize="2rem" pl="10px" pt='20px' fontWeight="500" className="animate__animated animate__fadeIn">
-          Habilidades
+          {t('skills.title')}
         </Box>
         <Grid templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)' }} gap={10} px="60px" py="20px" className="animate__animated animate__fadeIn">
           <Card
@@ -59,20 +63,22 @@ function Skills() {
         >
           <Star
             message={
-              "Cursando pós-graduação em desenvolvimento Full Stack pelo Centro Universitário Descomplica."
+              t('skills.star1')
             }
           />
           <Star
             message={
-              "Cursando Backend com Node.js e Typescript com a AdaTech."
+              t('skills.star2')
             }
           />
           <Star
             message={
-              "Possuo conhecimento em Server Actions e desenvolvo aplicações Full Stack com Next.js."
+              t('skills.star3')
             }
           />
-          <Star message={"Terminei vários cursos renomados da Udemy e completei o Bootcamp The Odin Project em Full Stack Javascript com Ubuntu/Linux."} />
+          <Star message={
+              t('skills.star4')
+            } />
         </Box>
       </Box>
     </Box>

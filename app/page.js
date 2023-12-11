@@ -2,8 +2,12 @@
 
 import { Box, Grid } from "@chakra-ui/layout";
 import "animate.css";
+import { useTranslation } from 'react-i18next';
 
 export default function Home() {
+
+  const { t } = useTranslation();
+
   return (
     <Box
       width={{base:'100vw', lg:"87vw"}}
@@ -37,10 +41,10 @@ export default function Home() {
               transition="500ms"
             >
               <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
-                Experiente na Área
+                {t('home.box1Title')}
               </Box>
               <Box px="20px" textAlign="justify">
-                Realiza entregas como freelancer e trabalhou para uma Startup
+                {t('home.box1Subtitle')}
               </Box>
             </Box>
             <Box
@@ -59,10 +63,10 @@ export default function Home() {
               transition="500ms"
             >
               <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
-                Estudioso da Programação
+                {t('home.box2Title')}
               </Box>
               <Box px="20px" textAlign="justify">
-                Segue praticando sem deixar de se atualizar
+                {t('home.box2Subtitle')}
               </Box>
             </Box>
             <Box
@@ -81,10 +85,10 @@ export default function Home() {
               transition="500ms"
             >
               <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
-                Apaixonado pelo que Faz
+                {t('home.box3Title')}
               </Box>
               <Box px="20px" textAlign="justify">
-                Aquele toque de faz toda a diferença
+                {t('home.box3Subtitle')}
               </Box>
             </Box>
           </Grid>
@@ -107,7 +111,7 @@ export default function Home() {
             gap={1}
           >
             <Box fontSize="1.6rem" fontWeight="600" textAlign='center' pb="10px">
-              Familiaridade com várias tecnologias
+              {t('home.box4Title')}
             </Box>
             <Box align="center">
               <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,next,nodejs,nestjs,prisma,tailwind,docker,git,github" />

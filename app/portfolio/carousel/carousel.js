@@ -1,7 +1,6 @@
 'use client'
 
 import { Box } from "@chakra-ui/react";
-import Image from "next/image";
 import React, {useState} from "react";
 import { FaChevronLeft, FaChevronRight, FaJava, FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
@@ -9,8 +8,7 @@ import { BiLogoTypescript, BiLogoSpringBoot, BiLogoPostgresql  } from "react-ico
 import { SiMongodb, SiExpress, SiMongoose, SiJavascript  } from "react-icons/si";
 import {BsCircle} from 'react-icons/bs'
 import 'animate.css';
-import Link from "next/link";
-import Slide from "./Slide"
+import Slide from "./Slide.js"
 
 function Carousel() {
 

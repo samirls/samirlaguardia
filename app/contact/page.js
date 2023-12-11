@@ -1,11 +1,17 @@
+'use client'
+
 import { Box, Grid } from "@chakra-ui/react";
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Card from "./Card";
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+
+  const { t } = useTranslation();
+
   return (
     <Box
       width={{base:'100vw', lg:"87vw"}}
@@ -24,10 +30,10 @@ function Contact() {
           fontWeight="500"
           className="animate__animated animate__fadeIn"
         >
-          Contato
+          {t('getInTouch.title')}
         </Box>
         <Box height={{base: '', lg:"55vh"}}>
-          <Box pl="20px" className="animate__animated animate__fadeIn">Diga um olá!</Box>
+          <Box pl="20px" className="animate__animated animate__fadeIn">{t('getInTouch.subTitle')}</Box>
           <Grid
             templateColumns={{base: '1fr', lg:"1fr 1fr"}}
             gap={{base: 0, lg:10}}
@@ -47,14 +53,14 @@ function Contact() {
                 icon={<AiOutlineMail />}
                 title={"Email"}
                 subTitle={"samirlaguardiaii@gmail.com"}
-                buttonName={"Enviar E-mail"}
+                buttonName={t('getInTouch.buttonE')}
                 href={"mailto:samirlaguardiaii@gmail.com"}
               />
               <Card
                 icon={<FaWhatsapp />}
                 title={"Whatsapp"}
                 subTitle={"+5527997761863"}
-                buttonName={"Enviar Mensagem"}
+                buttonName={t('getInTouch.buttonW')}
                 href={"https://api.whatsapp.com/send?phone=5527997761863"}
               />
             </Box>
@@ -69,14 +75,14 @@ function Contact() {
                 icon={<FaLinkedin />}
                 title={"LinkedIn"}
                 subTitle={"samir-laguardia"}
-                buttonName={"Ver Rede"}
-                href={"https:www.linkedin.com/in/samir-laguardia"}
+                buttonName={t('getInTouch.buttonL')}
+                href={"https://www.linkedin.com/in/samir-laguardia"}
               />
               <Card
                 icon={<FaGithub />}
                 title={"Github"}
                 subTitle={"samirls"}
-                buttonName={"Ver Projetos"}
+                buttonName={t('getInTouch.buttonG')}
                 href={"https://github.com/samirls"}
               />
             </Box>

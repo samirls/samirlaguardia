@@ -6,7 +6,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { LuMonitorUp, LuMonitorOff } from "react-icons/lu";
 import { Tooltip } from "@chakra-ui/react";
 import { useMediaQuery } from '@chakra-ui/react'
-
+import { useTranslation } from 'react-i18next';
 
 
 function Slide({ src, hrefLive, hrefGithub, skills }) {
@@ -14,6 +14,8 @@ function Slide({ src, hrefLive, hrefGithub, skills }) {
   const [isLargerThan800] = useMediaQuery('(min-width: 992px)')
 
   const imageHeight = isLargerThan800 ? "320px" : "150px";
+
+  const { t } = useTranslation();
 
   return (
     <Box className="animate__animated animate__fadeIn" position="relative">
@@ -63,7 +65,7 @@ function Slide({ src, hrefLive, hrefGithub, skills }) {
         </Tooltip>
       </Box>
       <Box fontSize={{base:'1.1rem', lg:"1.5rem"}} display="flex" alignItems="center" height="50px" gap={2}>
-        <Box>Tecnologias:</Box>
+        <Box>{t('portfolio.carouselTitle')}</Box>
         {skills.map((skill, index) => (
           <Box key={index} fontSize={{base:'1.8rem', lg:"2.5rem"}} color={skill.color}>
             {skill.icon}

@@ -1,11 +1,12 @@
 "use client";
 
+import { useState } from "react";
 import { Box } from "@chakra-ui/layout";
 import { IoHomeOutline } from "react-icons/io5";
 import { GiSkills } from "react-icons/gi";
 import { FaPersonChalkboard } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
-import { FiMenu } from "react-icons/fi";
+import { IoLanguageOutline } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import { RxChevronRight } from "react-icons/rx";
 import NavItem from "./NavItem";
@@ -13,17 +14,27 @@ import "animate.css";
 import { useDisclosure } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
 import { CiMenuKebab } from "react-icons/ci";
-
-const menuItems = [
-  { icon: <IoHomeOutline />, label: "Início", path: "/" },
-  { icon: <GiSkills />, label: "Habilidades", path: "/skills" },
-  { icon: <FaPersonChalkboard />, label: "Portfólio", path: "/portfolio" },
-  { icon: <FiPhone />, label: "Contato", path: "/contact" },
-];
+import { GiBrazilFlag } from "react-icons/gi";
+import { LiaFlagUsaSolid } from "react-icons/lia";
+import { i18n } from "../../../app/translation/i18n";
+import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
+import { useTranslation } from "react-i18next";
 
 export default function SideNav() {
   const pathname = usePathname();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { t } = useTranslation();
+
+  const menuItems = [
+    { icon: <IoHomeOutline />, label: t("sideNav.home"), path: "/" },
+    { icon: <GiSkills />, label: t("sideNav.skills"), path: "/skills" },
+    {
+      icon: <FaPersonChalkboard />,
+      label: t("sideNav.portfolio"),
+      path: "/portfolio",
+    },
+    { icon: <FiPhone />, label: t("sideNav.contact"), path: "/contact" },
+  ];
 
   return (
     <>
@@ -36,6 +47,33 @@ export default function SideNav() {
         px="10px"
         bg="white"
       >
+        <Box
+          display={{ base: "none", lg: "flex" }}
+          justifyContent="center"
+          alignItems="center"
+          fontSize="2.5rem"
+          color="black"
+        >
+          <Menu>
+            <MenuButton>
+              <IoLanguageOutline />
+            </MenuButton>
+            <MenuList fontSize="1.2rem">
+              <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
+                English
+                <Box ml={2}>
+                  <LiaFlagUsaSolid />
+                </Box>
+              </MenuItem>
+              <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
+                Português
+                <Box color="white" bg="black" height="fit-content" ml={2}>
+                  <GiBrazilFlag />
+                </Box>
+              </MenuItem>
+            </MenuList>
+          </Menu>
+        </Box>
         <Box
           display="flex"
           flexDir="column"
@@ -68,6 +106,34 @@ export default function SideNav() {
         onClick={() => onOpen()}
       >
         <CiMenuKebab />
+      </Box>
+      <Box
+        position="absolute"
+        fontSize="2.5rem"
+        top={"90px"}
+        right={3}
+        color="black"
+        display={{ base: "block", lg: "none" }}
+      >
+        <Menu>
+          <MenuButton>
+            <IoLanguageOutline />
+          </MenuButton>
+          <MenuList fontSize="1.2rem">
+            <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
+              English
+              <Box ml={2}>
+                <LiaFlagUsaSolid />
+              </Box>
+            </MenuItem>
+            <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
+              Português
+              <Box color="white" bg="black" height="fit-content" ml={2}>
+                <GiBrazilFlag />
+              </Box>
+            </MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
       <Box
         position="fixed"
