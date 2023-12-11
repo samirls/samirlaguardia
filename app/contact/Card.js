@@ -5,15 +5,15 @@ import React from "react";
 function Card({icon, title, subTitle, buttonName, href}) {
   return (
     <Box
-      w="50%"
-      h="15vh"
+      w={{base: '80%', lg:"50%"}}
+      h={{base: '150px', lg:"15vh"}}
       bg="linear-gradient(to top, #e0e7ea8a 0%, #e0e7ea36 100%);"//#e0e7ea8a
       borderRadius="30px"
       display="flex"
       flexDir="column"
       justifyContent="center"
       alignItems="center"
-      mb="15px"
+      mb={{base: '0', lg:"15px"}}
       boxShadow="md"
       _hover={{
         boxShadow: "lg",

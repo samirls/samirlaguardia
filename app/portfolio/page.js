@@ -5,7 +5,7 @@ import "animate.css";
 
 function Portfolio() {
   return (
-    <Box width="87vw" bg="white">
+    <Box width={{base:'100vw', lg:"87vw"}} bg="white">
       <Box width="100%">
         <Box
           fontSize="2rem"

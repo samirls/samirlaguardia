@@ -12,6 +12,7 @@ import NavItem from "./NavItem";
 import "animate.css";
 import { useDisclosure } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
+import { CiMenuKebab } from "react-icons/ci";
 
 const menuItems = [
   { icon: <IoHomeOutline />, label: "Início", path: "/" },
@@ -61,12 +62,12 @@ export default function SideNav() {
         position="absolute"
         fontSize="3rem"
         top={5}
-        right={5}
-        color="blue.200"
+        right={3}
+        color="black"
         display={{ base: "block", lg: "none" }}
         onClick={() => onOpen()}
       >
-        <FiMenu />
+        <CiMenuKebab />
       </Box>
       <Box
         position="fixed"

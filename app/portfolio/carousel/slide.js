@@ -5,22 +5,30 @@ import React from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { LuMonitorUp, LuMonitorOff } from "react-icons/lu";
 import { Tooltip } from "@chakra-ui/react";
+import { useMediaQuery } from '@chakra-ui/react'
 
-function slide({ src, hrefLive, hrefGithub, skills }) {
+
+
+function Slide({ src, hrefLive, hrefGithub, skills }) {
+
+  const [isLargerThan800] = useMediaQuery('(min-width: 992px)')
+
+  const imageHeight = isLargerThan800 ? "320px" : "150px";
+
   return (
     <Box className="animate__animated animate__fadeIn" position="relative">
       <Image
         src={src}
         width="900"
         height="320"
-        style={{ width: "auto", height: "320px" }}
+        style={{ width: "auto", height: imageHeight }}
         alt="image"
       />
       <Box
-        fontSize="2.5rem"
+        fontSize={{base: '1.8rem',lg:"2.5rem"}}
         position="absolute"
-        top="100px"
-        right="-50px"
+        top={{base: '10px', lg:"100px"}}
+        right={{base: '-10px', lg:"-50px"}}
         color="black"
       >
         {hrefLive === "notDeployed" ? (
@@ -40,10 +48,10 @@ function slide({ src, hrefLive, hrefGithub, skills }) {
         )}
       </Box>
       <Box
-        fontSize="2.5rem"
+        fontSize={{base: '1.8rem', lg:"2.5rem"}}
         position="absolute"
-        top="180px"
-        right="-50px"
+        top={{base: '60px', lg:"150px"}}
+        right={{base: '-10px', lg:"-50px"}}
         color="purple.500"
       >
         <Tooltip label="Ver código em nova aba">
@@ -54,10 +62,10 @@ function slide({ src, hrefLive, hrefGithub, skills }) {
           </span>
         </Tooltip>
       </Box>
-      <Box fontSize="1.5rem" display="flex" alignItems="center" height="50px" gap={2}>
+      <Box fontSize={{base:'1.1rem', lg:"1.5rem"}} display="flex" alignItems="center" height="50px" gap={2}>
         <Box>Tecnologias:</Box>
         {skills.map((skill, index) => (
-          <Box key={index} fontSize="2.5rem" color={skill.color}>
+          <Box key={index} fontSize={{base:'1.8rem', lg:"2.5rem"}} color={skill.color}>
             {skill.icon}
           </Box>
         ))}
@@ -66,4 +74,4 @@ function slide({ src, hrefLive, hrefGithub, skills }) {
   );
 }
 
-export default slide;
+export default Slide;

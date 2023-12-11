@@ -10,7 +10,7 @@ import { SiMongodb, SiExpress, SiMongoose, SiJavascript  } from "react-icons/si"
 import {BsCircle} from 'react-icons/bs'
 import 'animate.css';
 import Link from "next/link";
-import Slide from "./slide"
+import Slide from "./Slide"
 
 function Carousel() {
 
@@ -29,7 +29,7 @@ function Carousel() {
   };
 
   return (
-    <Box display='flex' justifyContent='center'>
+    <Box display='flex' justifyContent='center'  >
       <Box className="animate__animated animate__fadeIn">
 
         {

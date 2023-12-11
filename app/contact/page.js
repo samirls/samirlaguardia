@@ -8,7 +8,7 @@ import Card from "./Card";
 function Contact() {
   return (
     <Box
-      width="87vw"
+      width={{base:'100vw', lg:"87vw"}}
       bg="white"
       display="flex"
       flexDir="column"
@@ -26,15 +26,15 @@ function Contact() {
         >
           Contato
         </Box>
-        <Box height="55vh">
+        <Box height={{base: '', lg:"55vh"}}>
           <Box pl="20px" className="animate__animated animate__fadeIn">Diga um olá!</Box>
           <Grid
-            templateColumns="1fr 1fr"
-            gap={10}
-            px="60px"
-            py="20px"
+            templateColumns={{base: '1fr', lg:"1fr 1fr"}}
+            gap={{base: 0, lg:10}}
+            px={{base:'10px', lg:"60px"}}
+            py={{base:'10px', lg:"20px"}}
             className="animate__animated animate__fadeIn"
-            height="50vh"
+            height={{base: '800px', lg:"50vh"}}
           >
             <Box
               width="100%"
