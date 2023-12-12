@@ -6,7 +6,6 @@ import { IoHomeOutline } from "react-icons/io5";
 import { GiSkills } from "react-icons/gi";
 import { FaPersonChalkboard } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
-import { IoLanguageOutline } from "react-icons/io5";
 import { usePathname } from "next/navigation";
 import { RxChevronRight } from "react-icons/rx";
 import NavItem from "./NavItem";
@@ -14,12 +13,13 @@ import "animate.css";
 import { useDisclosure } from "@chakra-ui/react";
 import DrawerComponent from "./DrawerComponent";
 import { CiMenuKebab } from "react-icons/ci";
-import { GiBrazilFlag } from "react-icons/gi";
-import { LiaFlagUsaSolid } from "react-icons/lia";
 import { i18n } from "../../../app/translation/i18n";
 import { Menu, MenuButton, MenuList, MenuItem } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
 import { Tooltip } from "@chakra-ui/react";
+import { IoLanguageOutline } from "react-icons/io5";
+import { GiBrazilFlag } from "react-icons/gi";
+import { LiaFlagUsaSolid } from "react-icons/lia";
 
 export default function SideNav() {
   const pathname = usePathname();
@@ -48,7 +48,7 @@ export default function SideNav() {
         px="10px"
         bg="white"
       >
-        <Tooltip label="Choose your Language" placement='right'>
+        <Tooltip label="Choose your Language" placement="right">
           <Box
             display={{ base: "none", lg: "flex" }}
             justifyContent="center"
@@ -58,8 +58,8 @@ export default function SideNav() {
             position="absolute"
             bottom={10}
             left={10}
-            bg='purple.200'
-            borderRadius='50%'
+            bg="purple.200"
+            borderRadius="50%"
           >
             <Menu>
               <MenuButton>
@@ -114,34 +114,6 @@ export default function SideNav() {
         onClick={() => onOpen()}
       >
         <CiMenuKebab />
-      </Box>
-      <Box
-        position="absolute"
-        fontSize="2.5rem"
-        top={"90px"}
-        right={3}
-        color="black"
-        display={{ base: "block", lg: "none" }}
-      >
-        <Menu>
-          <MenuButton>
-            <IoLanguageOutline />
-          </MenuButton>
-          <MenuList fontSize="1.2rem">
-            <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
-              English
-              <Box ml={2}>
-                <LiaFlagUsaSolid />
-              </Box>
-            </MenuItem>
-            <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
-              Português
-              <Box color="white" bg="black" height="fit-content" ml={2}>
-                <GiBrazilFlag />
-              </Box>
-            </MenuItem>
-          </MenuList>
-        </Menu>
       </Box>
       <Box
         position="fixed"
