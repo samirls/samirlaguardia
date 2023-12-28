@@ -20,7 +20,7 @@ function Portfolio() {
           fontWeight="500"
           className="animate__animated animate__fadeIn"
         >
-          {t('skills.title')}
+          {t('portfolio.title')}
         </Box>
         <Box display='flex' justifyContent='center' pt='50px' className="animate__animated animate__fadeIn">
           <Carousel />

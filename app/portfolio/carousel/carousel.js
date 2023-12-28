@@ -21,7 +21,7 @@ function Carousel() {
   };
 
   const goToNextPage = () => {
-    if (currentPage < 8) {
+    if (currentPage < 9) {
       setCurrentPage(currentPage + 1);
     }
   };
@@ -30,8 +30,21 @@ function Carousel() {
     <Box display='flex' justifyContent='center'  >
       <Box className="animate__animated animate__fadeIn">
 
-        {
+      {
           currentPage === 1 &&
+          <SingleSlide
+            src={"/img/task-list-app.png"}
+            hrefLive={"https://todo-next-14-kappa.vercel.app/"}
+            hrefGithub={"https://github.com/samirls/todo-next-14"}
+            skills={[
+              { icon: <TbBrandNextjs/>, color: "gray.800"},
+              { icon: <BiLogoTypescript />, color: "blue.500" },
+              { icon: <BiLogoPostgresql />, color: "blue.700" },
+            ]}
+          />
+        }
+        {
+          currentPage === 2 &&
           <SingleSlide
             src={"/img/drake-equation.png"}
             hrefLive={"https://drake-equation-next-14.vercel.app/"}
@@ -44,7 +57,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 2 &&
+          currentPage === 3 &&
           <SingleSlide 
             src={"/img/todo-family.png"}
             hrefLive={"https://todofamily.samirlaguardia.com/"}
@@ -58,7 +71,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 3 &&
+          currentPage === 4 &&
           <SingleSlide 
             src={"/img/minha-clinica.png"}
             hrefLive={"notDeployed"}
@@ -72,7 +85,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 4 &&
+          currentPage === 5 &&
           <SingleSlide 
             src={"/img/workout-buddy.png"}
             hrefLive={"notDeployed"}
@@ -86,7 +99,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 5 &&
+          currentPage === 6 &&
           <SingleSlide 
             src={"/img/speed-typing.png"}
             hrefLive={"https://samirls.github.io/speedtyping/index.html"}
@@ -99,7 +112,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 6 &&
+          currentPage === 7 &&
           <SingleSlide 
             src={"/img/movie-blog.png"}
             hrefLive={"notDeployed"}
@@ -112,7 +125,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 7 &&
+          currentPage === 8 &&
           <SingleSlide 
             src={"/img/escala-glasgow.png"}
             hrefLive={"https://samirls.github.io/glasgow/"}
@@ -125,7 +138,7 @@ function Carousel() {
           />
         }
         {
-          currentPage === 8 &&
+          currentPage === 9 &&
           <SingleSlide 
             src={"/img/calculadora-trabalhista.png"}
             hrefLive={"https://samirls.github.io/calculadoraclt/"}
@@ -149,6 +162,7 @@ function Carousel() {
               <BsCircle cursor='pointer' onClick={() => setCurrentPage(6)} style={{background: currentPage === 6 ? "black" : "transparent", borderRadius: '50%'}}/>
               <BsCircle cursor='pointer' onClick={() => setCurrentPage(7)} style={{background: currentPage === 7 ? "black" : "transparent", borderRadius: '50%'}}/>
               <BsCircle cursor='pointer' onClick={() => setCurrentPage(8)} style={{background: currentPage === 8 ? "black" : "transparent", borderRadius: '50%'}}/>
+              <BsCircle cursor='pointer' onClick={() => setCurrentPage(9)} style={{background: currentPage === 9 ? "black" : "transparent", borderRadius: '50%'}}/>
             </Box>
             <FaChevronRight fontSize='2rem' cursor='pointer' onClick={goToNextPage}/>
           </Box>

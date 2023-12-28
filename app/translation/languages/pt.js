@@ -22,7 +22,7 @@ const messages = {
           "Terminei vários cursos renomados da Udemy e completei o Bootcamp The Odin Project em Full Stack Javascript com Ubuntu/Linux.",
       },
       portfolio: {
-        title: "Portfolio",
+        title: "Portfólio",
         carouselTitle: "Tecnologias:",
       },
       getInTouch: {
