@@ -60,7 +60,7 @@ function Carousel() {
           currentPage === 3 &&
           <SingleSlide 
             src={"/img/todo-family.png"}
-            hrefLive={"https://todofamily.samirlaguardia.com/"}
+            hrefLive={"notDeployed"}
             hrefGithub={"https://github.com/samirls/todo-family-api"}
             skills={[
               { icon: <FaReact />, color: "blue.600"},
