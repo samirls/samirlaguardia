@@ -3,6 +3,7 @@
 import { Box, Grid } from "@chakra-ui/layout";
 import "animate.css";
 import { useTranslation } from 'react-i18next';
+import styles from './page.module.css'
 
 export default function Home() {
 
@@ -40,7 +41,7 @@ export default function Home() {
               }}
               transition="500ms"
             >
-              <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
+              <Box fontSize="1.6rem" fontWeight="600" textAlign="center" className={styles.effect}>
                 {t('home.box1Title')}
               </Box>
               <Box px="20px" textAlign="justify">
@@ -62,7 +63,7 @@ export default function Home() {
               }}
               transition="500ms"
             >
-              <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
+              <Box fontSize="1.6rem" fontWeight="600" textAlign="center" className={styles.effect}>
                 {t('home.box2Title')}
               </Box>
               <Box px="20px" textAlign="justify">
@@ -84,7 +85,7 @@ export default function Home() {
               }}
               transition="500ms"
             >
-              <Box fontSize="1.6rem" fontWeight="600" textAlign="center">
+              <Box fontSize="1.6rem" fontWeight="600" textAlign="center" className={styles.effect}>
                 {t('home.box3Title')}
               </Box>
               <Box px="20px" textAlign="justify">
@@ -110,7 +111,7 @@ export default function Home() {
             alignItems="center"
             gap={1}
           >
-            <Box fontSize="1.6rem" fontWeight="600" textAlign='center' pb="10px">
+            <Box fontSize="1.6rem" fontWeight="600" textAlign='center' mb="10px" className={styles.effect}>
               {t('home.box4Title')}
             </Box>
             <Box align="center">

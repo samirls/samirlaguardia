@@ -4,7 +4,7 @@ import styles from "./NavItem.module.css";
 
 export default function NavItem({ icon, label, path, isSelected }) {
   return (
-    <div className={!isSelected ? styles.hover3 : ""}>
+    <Box className={!isSelected ? styles.hover3 : ""}>
       <Link href={path}>
         <Box
           display="flex"
@@ -22,6 +22,6 @@ export default function NavItem({ icon, label, path, isSelected }) {
           </Box>
         </Box>
       </Link>
-    </div>
+    </Box>
   );
 }
