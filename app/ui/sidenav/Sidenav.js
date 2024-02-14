@@ -123,6 +123,7 @@ export default function SideNav() {
         color="black.200"
         display={{ base: "block", lg: "none" }}
         onClick={() => onOpen()}
+        zIndex={9}
       >
         <RxChevronRight />
       </Box>
