@@ -1,0 +1,28 @@
+.effect {
+  background-image: linear-gradient(
+    to right,
+    #54b3d6,
+    #54b3d6 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover3 {
+  --c: no-repeat linear-gradient(#1095c1 0 0);
+  background: 
+    var(--c)  calc(-101% + var(--p,0%)) 100%,
+    var(--c)  calc( 201% - var(--p,0%)) 0;
+  background-size: 50.1% var(--p,.08em);
+  transition: .3s var(--t,0s), background-position .3s calc(.3s - var(--t,0s));
+  color: red;
+}
+.hover3:hover {
+  --p: 101%;
+  --t: 0.3s;
+  color: #fff;
+}
