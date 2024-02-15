@@ -1,0 +1,17 @@
+.slideshow {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0.5rem rgba(255, 0, 0, 0.5);
+}
+
+.slideshowimg {
+  transform: scale(1.1) translateX(-1rem) rotate(-5deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.slideshow .active {
+  z-index: 1;
+  opacity: 1;
+  transform: scale(1) translateX(0) rotate(0);
+}
