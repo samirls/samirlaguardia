@@ -8,7 +8,6 @@ import { LuMonitorUp, LuMonitorOff } from "react-icons/lu";
 import { Tooltip } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 import { useTranslation } from "react-i18next";
-import styles from "./Slides.module.css";
 
 function SingleSlide({ src, hrefLive, hrefGithub, skills, slideAnimation }) {
   const [isLargerThan800] = useMediaQuery("(min-width: 992px)");
