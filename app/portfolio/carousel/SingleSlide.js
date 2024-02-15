@@ -21,8 +21,8 @@ function SingleSlide({ src, hrefLive, hrefGithub, skills, slideAnimation }) {
     <Box
       className={
         slideAnimation
-          ? "animate__animated animate__fadeOut --animate-duration: 0.3s"
-          : "animate__animated animate__fadeIn --animate-duration: 0.3s"
+          ? "animate__animated animate__zoomOut --animate-duration: 0.2s"
+          : "animate__animated animate__zoomIn --animate-duration: 0.2s"
       }
       position="relative"
     >

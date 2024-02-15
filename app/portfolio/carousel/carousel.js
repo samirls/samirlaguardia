@@ -92,7 +92,7 @@ function Carousel() {
       setTimeout(() => {
         setCurrentPage(currentPage - 1);
         setSlideAnimation(false);
-      }, 300);
+      }, 200);
     }
   };
 
@@ -102,7 +102,7 @@ function Carousel() {
       setTimeout(() => {
         setCurrentPage(currentPage + 1);
         setSlideAnimation(false);
-      }, 300);
+      }, 200);
     }
   };
 
