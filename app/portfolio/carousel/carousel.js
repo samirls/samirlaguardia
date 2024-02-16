@@ -1,11 +1,8 @@
 "use client";
 
-import { Box } from "@chakra-ui/react";
+import { Box, Spinner } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import {
-  FaChevronLeft,
-  FaChevronRight,
-} from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { BsCircle } from "react-icons/bs";
 import "animate.css";
 import SingleSlide from "./SingleSlide";
@@ -85,39 +82,58 @@ function Carousel() {
   };
 
   if (!imagesLoaded) {
-    return <div>Carregando...</div>;
+    return (
+      <Box
+        display="flex"
+        flexDir="column"
+        justifyContent="center"
+        alignItems="center"
+        width="100%"
+        height="500px"
+      >
+        <Box>
+          <Spinner
+            thickness="4px"
+            speed="0.65s"
+            emptyColor="gray.200"
+            color="blue.500"
+            size="xl"
+          />
+        </Box>
+      </Box>
+    );
   }
 
   return (
     <Box display="flex" justifyContent="center">
-        <Box className="animate__animated animate__fadeIn">
-          {renderSlide(currentPage)}
-          <Box>
-            <Box
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              width="100%"
-              pt="15px"
-              bottom="5"
-              gap="6"
-            >
-              <FaChevronLeft
-                fontSize="2rem"
-                cursor="pointer"
-                onClick={goToPreviousPage}
-              />
-              <Box display="flex" fontSize="0.8rem" gap="1">
-                {renderNavigationCircles()}
-              </Box>
-              <FaChevronRight
-                fontSize="2rem"
-                cursor="pointer"
-                onClick={goToNextPage}
-              />
+      <Box className="animate__animated animate__fadeIn">
+        {renderSlide(currentPage)}
+        <Box>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+            pt="15px"
+            bottom="5"
+            gap="6"
+          >
+            <FaChevronLeft
+              fontSize="2rem"
+              cursor="pointer"
+              onClick={goToPreviousPage}
+            />
+            <Box display="flex" fontSize="0.8rem" gap="1">
+              {renderNavigationCircles()}
             </Box>
+            <FaChevronRight
+              fontSize="2rem"
+              cursor="pointer"
+              onClick={goToNextPage}
+            />
           </Box>
         </Box>
+      </Box>
     </Box>
   );
 }
