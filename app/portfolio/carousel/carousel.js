@@ -1,7 +1,7 @@
 "use client";
 
 import { Box } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -14,6 +14,25 @@ import { SlidesData } from "./SlidesData.js";
 function Carousel() {
   const [currentPage, setCurrentPage] = useState(0);
   const [slideAnimation, setSlideAnimation] = useState(false);
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const preloadImages = () => {
+      const imagePromises = SlidesData.map((slide) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = slide.src;
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+      Promise.all(imagePromises)
+        .then(() => setImagesLoaded(true))
+        .catch((error) => console.error("Erro ao carregar imagens:", error));
+    };
+
+    preloadImages();
+  }, []);
 
   const images = SlidesData.map((slide) => slide.src);
 
@@ -64,6 +83,10 @@ function Carousel() {
       />
     ));
   };
+
+  if (!imagesLoaded) {
+    return <div>Carregando...</div>;
+  }
 
   return (
     <Box display="flex" justifyContent="center">

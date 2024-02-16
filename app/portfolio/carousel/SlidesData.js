@@ -62,17 +62,6 @@ export const SlidesData = [
     ],
   },
   {
-    src: "/img/workout-buddy.png",
-    liveLink: "notDeployed",
-    githubLink: "https://github.com/samirls/workout-buddy-be",
-    skills: [
-      { icon: <FaReact />, color: "blue.600" },
-      { icon: <SiExpress />, color: "black" },
-      { icon: <SiMongoose />, color: "red.700" },
-      { icon: <SiMongodb />, color: "green.600" },
-    ],
-  },
-  {
     src: "/img/speed-typing.png",
     liveLink: "https://samirls.github.io/speedtyping/index.html",
     githubLink: "https://github.com/samirls/speedtyping",
