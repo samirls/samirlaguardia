@@ -3,7 +3,7 @@ const messages = {
     translations: {
       home: {
         box1Title: "Experienced",
-        box1Subtitle: "Works as a freelancer and worked for a startup",
+        box1Subtitle: "Coding for years",
         box2Title: "Programming Enthusiast",
         box2Subtitle: "Combines Practice With theory",
         box3Title: "Passionate About Coding",
@@ -13,13 +13,21 @@ const messages = {
       skills: {
         title: "Skills",
         star1:
-          "Currently pursuing a postgraduate degree in Full Stack development at Centro Universitário Descomplica.",
+          "Postgraduate degree in Full Stack Development.",
         star2:
-          "Taking a Backend course with Node.js and Typescript at AdaTech.",
+          "Focused on building applications that solve real-life problems.",
         star3:
-          "I have expertise in Server Actions and can develop Full Stack applications with Next.js.",
+          "Expert in Full Stack applications with C# .NET MVC and Next.js.",
         star4:
-          "Completed several well-known courses on Udemy and finished The Odin Project Bootcamp in Full Stack Javascript with Ubuntu/Linux.",
+          "Expert in Backend APIs with Node and C#.",
+        star5:
+          "Expert in Frontend with React or HTML + CSS",
+        star6:
+          "Completed several renowned courses on Udemy",
+        star7:
+          "Finished The Odin Project Bootcamp in Full Stack Javascript with Ubuntu/Linux.",
+        star8:
+          "And much more...",
       },
       portfolio: {
         title: "Portfolio",

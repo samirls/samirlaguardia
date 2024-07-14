@@ -21,7 +21,7 @@ function Portfolio() {
           <Box
             fontSize="2rem"
             pl="10px"
-            pt="20px"
+            pt="50px"
             fontWeight="500"
             className="animate__animated animate__fadeIn"
           >

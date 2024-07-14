@@ -4,7 +4,7 @@ const messages = {
       home: {
         box1Title: "Experiente na Área",
         box1Subtitle:
-          "Realiza entregas como freelancer e trabalhou para uma Startup",
+          "Atua na área há anos",
         box2Title: "Estudioso da Programação",
         box2Subtitle: "Segue praticando sem deixar de se atualizar",
         box3Title: "Apaixonado pelo que Faz",
@@ -14,12 +14,21 @@ const messages = {
       skills: {
         title: "Habilidades",
         star1:
-          "Cursando pós-graduação em desenvolvimento Full Stack pelo Centro Universitário Descomplica.",
-        star2: "Cursando Backend com Node.js e Typescript com a AdaTech.",
+          "Pós-graduado em desenvolvimento Full Stack.",
+        star2:
+          "Focado em construir aplicações que resolvem problemas do mundo real.",
         star3:
-          "Possuo conhecimento em Server Actions e desenvolvo aplicações Full Stack com Next.js.",
+          "Especialista em aplicações Full Stack com C# .NET MVC e Next.js.",
         star4:
-          "Terminei vários cursos renomados da Udemy e completei o Bootcamp The Odin Project em Full Stack Javascript com Ubuntu/Linux.",
+          "Especialista em APIs no Backend com Node e C#.",
+        star5:
+          "Especialista em Frontend com React ou HTML + CSS.",
+        star6:
+          "Muitos cursos de renome completados na Udemy.",
+        star7: 
+          "Completei o bootcamp The Odin Project em Full Stack Javascript com Ubuntu/Linux.",
+        star8:
+          "E muito mais...",
       },
       portfolio: {
         title: "Portfólio",

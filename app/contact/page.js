@@ -28,7 +28,7 @@ function Contact() {
         height="62vh"
       >
         <Box width="100%">
-          <Box fontSize="2rem" pl="10px" pt="20px" fontWeight="500">
+          <Box fontSize="2rem" pl="10px" pt="50px" fontWeight="500">
             {t("getInTouch.title")}
           </Box>
           <Box height={{ base: "", lg: "55vh" }}>

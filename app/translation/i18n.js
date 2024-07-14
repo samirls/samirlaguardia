@@ -10,6 +10,7 @@ i18n
         debug: false,
         defaultNS: ['translations'],
         fallbackLng: "en-US",
+        lng: "en-US",
         ns: ["translations"],
         interpolation: {
             escapeValue: false,

@@ -21,14 +21,15 @@ function Skills() {
       flexDir="column"
       justifyContent="center"
       alignItems="center"
+      pb="40px"
     >
       <motion.div
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.75 }}
       >
-        <Box width="100%" height={{ base: "", lg: "78vh" }}>
-          <Box fontSize="2rem" pl="10px" pt="20px" fontWeight="500">
+        <Box width="100%" >
+          <Box fontSize="2rem" pl="10px" pt="50px" fontWeight="500">
             {t("skills.title")}
           </Box>
           <Grid
@@ -52,10 +53,10 @@ function Skills() {
               title={"Backend"}
               icon={<TbDatabase />}
               option1="Node"
-              option2="Express"
-              option3="Nest.js"
-              option4="Java"
-              option5="Spring Boot"
+              option2="Nest.js"
+              option3="C#"
+              option4=".NET"
+              option5="Java"
               option6="DB SQL/NoSQL"
             />
           </Grid>
@@ -64,17 +65,30 @@ function Skills() {
             flexDir="column"
             justifyContent="center"
             width={{ base: "100%", lg: "100%" }}
+            mt="30px"
             px={{ base: "30px", lg: "70px" }}
             fontSize={{ base: "1rem", lg: "1.2rem" }}
             className="animate__animated animate__fadeIn"
             gap={{ base: 5, lg: 2 }}
             pb={{ base: "50px", lg: "5px" }}
             pt={{ base: "30px", lg: "5px" }}
+
+            bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+            borderRadius="18px"
+            boxShadow='lg'
+            _hover={{
+              boxShadow: "2xl",
+            }}
+            transition="500ms"
           >
             <Star message={t("skills.star1")} />
             <Star message={t("skills.star2")} />
             <Star message={t("skills.star3")} />
             <Star message={t("skills.star4")} />
+            <Star message={t("skills.star5")} />
+            <Star message={t("skills.star6")} />
+            <Star message={t("skills.star7")} />
+            <Star message={t("skills.star8")} />
           </Box>
         </Box>
       </motion.div>
