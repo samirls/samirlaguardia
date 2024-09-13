@@ -14,21 +14,21 @@ function Skills() {
   const { t } = useTranslation();
 
   return (
-    <Box
-      width={{ base: "100vw", lg: "87vw" }}
-      bg="white"
-      display="flex"
-      flexDir="column"
-      justifyContent="center"
-      alignItems="center"
-      pb="40px"
+    <motion.div
+      initial={{ y: 20, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ ease: "easeInOut", duration: 0.75 }}
     >
-      <motion.div
-        initial={{ y: 20, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.75 }}
+      <Box
+        width={{ base: "100vw", lg: "87vw" }}
+        bg="white"
+        display="flex"
+        flexDir="column"
+        justifyContent="center"
+        alignItems="center"
+        pb="40px"
       >
-        <Box width="100%" >
+        <Box width="100%">
           <Box fontSize="2rem" pl="10px" pt="50px" fontWeight="500">
             {t("skills.title")}
           </Box>
@@ -72,10 +72,9 @@ function Skills() {
             gap={{ base: 5, lg: 2 }}
             pb={{ base: "50px", lg: "5px" }}
             pt={{ base: "30px", lg: "5px" }}
-
             bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
             borderRadius="18px"
-            boxShadow='lg'
+            boxShadow="lg"
             _hover={{
               boxShadow: "2xl",
             }}
@@ -91,8 +90,8 @@ function Skills() {
             <Star message={t("skills.star8")} />
           </Box>
         </Box>
-      </motion.div>
-    </Box>
+      </Box>
+    </motion.div>
   );
 }
 
