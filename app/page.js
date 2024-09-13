@@ -148,7 +148,7 @@ export default function Home() {
                 <img src="https://skillicons.dev/icons?i=html,css,javascript,typescript,react,next,nodejs,nestjs,prisma,tailwind,docker,git,github" />
               </Box>
               <Box align="center">
-                <img src="https://skillicons.dev/icons?i=java,spring,hibernate,idea,mongodb,mysql,postgres,cs,dotnet" />
+                <img src="https://skillicons.dev/icons?i=java,spring,hibernate,idea,mongodb,mysql,postgres,cs,dotnet,py,django,discord,postman" />
               </Box>
             </Box>
           </Box>
