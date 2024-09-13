@@ -57,7 +57,7 @@ function Topnav() {
             fontSize="3.5rem"
             fontWeight="500"
             bgClip="text"
-            bgGradient="linear(to-r, purple.300,blue.400)"
+            bgGradient="linear(to-r, purple.600,blue.400)"
             width="200px"
           >
             Samir
@@ -68,7 +68,7 @@ function Topnav() {
             marginTop="-25px"
             fontWeight="500"
             bgClip="text"
-            bgGradient="linear(to-r, blue.400,purple.300)"
+            bgGradient="linear(to-r, blue.400,purple.600)"
             width="270px"
           >
             Laguardia
@@ -189,7 +189,7 @@ function Topnav() {
           <Grid templateColumns="repeat(5, 1fr)" gap={6} px="10px">
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
-            <GridItem w="100%" h="1" bg="purple.400" borderRadius="9px" />
+            <GridItem w="100%" h="1" bg="purple.600" borderRadius="9px" />
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
             <GridItem w="100%" h="1" bg="blue.200" borderRadius="9px" />
           </Grid>

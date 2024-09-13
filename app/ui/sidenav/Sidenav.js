@@ -63,7 +63,7 @@ export default function SideNav() {
               color="black"
               height="50px"
               width="50px"
-              bg="purple.200"
+              bg="#c3cfe2"
               borderRadius="50%"
             >
               <Menu>
