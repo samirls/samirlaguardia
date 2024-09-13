@@ -48,47 +48,56 @@ export default function SideNav() {
         px="10px"
         bg="white"
       >
-        <Tooltip label="Choose your Language" placement="right">
-          <Box
-            display={{ base: "none", lg: "flex" }}
-            justifyContent="center"
-            alignItems="center"
-            fontSize="2.5rem"
-            color="black"
-            position="absolute"
-            bottom={10}
-            left={10}
-            bg="purple.200"
-            borderRadius="50%"
-          >
-            <Menu>
-              <MenuButton>
-                <IoLanguageOutline />
-              </MenuButton>
-              <MenuList fontSize="1.2rem">
-                <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
-                  English
-                  <Box ml={2}>
-                    <LiaFlagUsaSolid />
-                  </Box>
-                </MenuItem>
-                <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
-                  Português
-                  <Box color="white" bg="black" height="fit-content" ml={2}>
-                    <GiBrazilFlag />
-                  </Box>
-                </MenuItem>
-              </MenuList>
-            </Menu>
-          </Box>
-        </Tooltip>
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          width="100%"
+        >
+          <Tooltip label="Choose your Language" placement="right">
+            <Box
+              display={{ base: "none", lg: "flex" }}
+              justifyContent="center"
+              alignItems="center"
+              fontSize="2.5rem"
+              color="black"
+              height="50px"
+              width="50px"
+              bg="purple.200"
+              borderRadius="50%"
+            >
+              <Menu>
+                <MenuButton>
+                  <IoLanguageOutline />
+                </MenuButton>
+                <MenuList fontSize="1.2rem">
+                  <MenuItem onClick={() => i18n.changeLanguage("en-US")}>
+                    English
+                    <Box ml={2}>
+                      <LiaFlagUsaSolid />
+                    </Box>
+                  </MenuItem>
+                  <MenuItem onClick={() => i18n.changeLanguage("pt-BR")}>
+                    Português
+                    <Box color="white" bg="black" height="fit-content" ml={2}>
+                      <GiBrazilFlag />
+                    </Box>
+                  </MenuItem>
+                </MenuList>
+              </Menu>
+            </Box>
+          </Tooltip>
+        </Box>
+
         <Box
           display="flex"
           flexDir="column"
           height="300px"
           justifyContent="space-between"
+          
           px="15px"
           py="15px"
+          pt="40px"
           fontSize="1.1rem"
           bg="white"
           borderRadius="9px"

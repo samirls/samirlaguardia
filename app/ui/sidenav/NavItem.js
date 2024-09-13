@@ -9,7 +9,7 @@ export default function NavItem({ icon, label, path, isSelected }) {
         <Box
           display="flex"
           alignItems="center"
-          bg={isSelected ? "blue.100" : ""}
+          bg={isSelected ? "blue.200" : ""}
           borderRadius="9px"
           height="50px"
           cursor="pointer"
