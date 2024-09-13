@@ -7,7 +7,7 @@ function Card({ icon, title, subTitle, buttonName, href }) {
     <Box
       w={{ base: "80%", lg: "50%" }}
       h={{ base: "150px", lg: "180px" }}
-      bg="linear-gradient(to top, #e0e7ea8a 0%, #e0e7ea36 100%);"
+      bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%);"
       borderRadius="30px"
       display="flex"
       flexDir="column"

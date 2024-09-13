@@ -34,7 +34,7 @@ export default function Home() {
               <Box
                 w="100%"
                 h={{ base: "150px", lg: "30vh" }}
-                bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+                bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%)"
                 borderRadius="30px"
                 display="flex"
                 flexDir="column"
@@ -61,7 +61,7 @@ export default function Home() {
               <Box
                 w="100%"
                 h={{ base: "150px", lg: "30vh" }}
-                bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+                bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%)"
                 borderRadius="30px"
                 display="flex"
                 flexDir="column"
@@ -88,7 +88,7 @@ export default function Home() {
               <Box
                 w="100%"
                 h={{ base: "150px", lg: "30vh" }}
-                bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+                bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%)"
                 borderRadius="30px"
                 display="flex"
                 flexDir="column"
@@ -122,7 +122,7 @@ export default function Home() {
             <Box
               w="100%"
               h="20vh"
-              bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+              bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%)"
               boxShadow="lg"
               _hover={{
                 boxShadow: "2xl",

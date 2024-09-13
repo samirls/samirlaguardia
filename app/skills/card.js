@@ -9,7 +9,7 @@ function card({title, icon, option1, option2, option3, option4, option5, option6
       templateRows="2fr 1fr 1fr 1fr 1fr 1fr 1fr"
       w="100%"
       h={{base:'350px', lg:"35vh"}}
-      bg="linear-gradient(to top, #ecf2f8 0%, white 100%)"
+      bg="linear-gradient(to top, #c3cfe2 0%, #f5f7fa 100%)"
       borderRadius="18px"
       boxShadow='lg'
       _hover={{
@@ -23,7 +23,7 @@ function card({title, icon, option1, option2, option3, option4, option5, option6
         display="flex"
         justifyContent="center"
         alignItems="center"
-        bg="gray.50"
+
         borderRadius='9px'
         boxShadow='sm'
         gap={2}

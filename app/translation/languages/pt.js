@@ -18,7 +18,7 @@ const messages = {
         star2:
           "Focado em construir aplicações que resolvem problemas do mundo real.",
         star3:
-          "Especialista em aplicações Full Stack com C# .NET MVC e Next.js.",
+          "Especialista em aplicações Full Stack com C# .NET MVC, Django e Next.js.",
         star4:
           "Especialista em APIs no Backend com Node e C#.",
         star5:
